@@ -11,7 +11,8 @@ body {
 }
 
 .main {
-  padding: 5rem;
+  border-radius: 0.8rem;
+  padding: 2rem 0 3rem 0;
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -40,8 +41,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  height: 3rem;
+  width: 70%;
+  padding: 0.4rem;
   font-size: 1.7rem;
   background-color: #fcf8e8;
   color: #df7861;
@@ -54,7 +55,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: 3rem;
+  padding: 0.4rem;
   font-size: 1.7rem;
   text-decoration: line-through;
   background-color: #d19f80;
@@ -72,6 +73,10 @@ body {
   text-align: center;
   width: 80%;
   margin-left: 10%;
+}
+
+p {
+  padding: 0.3rem 2rem;
 }
 
 input::placeholder {
@@ -106,4 +111,8 @@ input[type="checkbox"] {
   -webkit-transform: scale(1.8); /* Safari and Chrome */
   -o-transform: scale(1.8); /* Opera */
   transform: scale(1.8);
+}
+
+#none {
+  display: none;
 }
