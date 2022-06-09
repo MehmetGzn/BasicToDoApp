@@ -3,10 +3,107 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+body {
+  background-color: #94b49f;
   color: #fff;
 }
-body {
-  background-color: #94B49F;
+
+.main {
+  padding: 5rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 
+.title img {
+  width: 8rem;
+  transform: rotate(-15deg);
+}
+
+.title h2 {
+  font-size: 5.5rem;
+  text-shadow: 0 5px 5px #7e9995;
+}
+
+#addDiv,
+#divUnChecked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 3rem;
+  font-size: 1.7rem;
+  background-color: #fcf8e8;
+  color: #df7861;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 5px #7e9995;
+}
+
+#divChecked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 3rem;
+  font-size: 1.7rem;
+  text-decoration: line-through;
+  background-color: #d19f80;
+  color: #fcf8e8;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 5px #7e9995;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background-color: #fcf8e8;
+  color: #df7861;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+input::placeholder {
+  color: #d19f80;
+}
+
+.addButton,
+.deleteButton {
+  appearance: none;
+  border: none;
+  padding: 0.35rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-right: 0.35rem;
+  background-color: #df7861;
+  border-radius: 0.5rem;
+}
+
+.addButton:hover,
+.deleteButton:hover {
+  background-color: #d19f80;
+}
+
+.checkbox {
+  margin-left: 1rem;
+  width: 1rem;
+}
+
+input[type="checkbox"] {
+  -ms-transform: scale(1.8); /* IE */
+  -moz-transform: scale(1.8); /* FF */
+  -webkit-transform: scale(1.8); /* Safari and Chrome */
+  -o-transform: scale(1.8); /* Opera */
+  transform: scale(1.8);
+}

@@ -15,27 +15,23 @@
     <title>BasicToDoApp</title>
   </head>
   <body>
-    <main>
+    <main class="main">
       <div class="title">
         <img src="img/checklist.png" alt="" />
         <h2>To Do List</h2>
       </div>
-      <div class="addDiv">
-        <div class="addItemInput">
-          <input type="text" />
-          <button class="addButton">
-            <img src="img/plus-2-32.ico" alt="plus" height="24px" />
-          </button>
-        </div>
+      <div id="addDiv">
+        <input class="input" type="text" placeholder="Add Item" />
+        <button class="addButton">
+          <img src="img/plus-2-48.ico" alt="plus" height="24px" />
+        </button>
       </div>
-      <div class="listItemDiv">
-        <div class="listItem">
-          <input class="" type="checkbox" />
-          <h4>Default list item</h4>
-          <button class="delete">
-            <img src="img/delete-32.ico" alt="delete" height="24px" />
-          </button>
-        </div>
+      <div id="divUnChecked">
+        <input onclick="updateStatus(this)" class="checkbox" type="checkbox" />
+        <p>Default list item</p>
+        <button class="deleteButton">
+          <img src="img/delete-48.ico" alt="delete" height="24px" />
+        </button>
       </div>
     </main>
     <script src="app.js"></script>
