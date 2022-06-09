@@ -3,4 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #fff;
 }
+body {
+  background-color: #94B49F;
+}
+
+
